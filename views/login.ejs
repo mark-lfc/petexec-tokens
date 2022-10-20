@@ -1,16 +1,18 @@
 <%- include('partials/head') %>
 
-<h1>LOGIN</h1>
-<form action="/login" method="POST">
-    <div>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" placeholder="username">
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="password">
-    </div>
-    <button>Login</button>
-</form>
+<div class="container-fluid">
+    <h1 class="mb-2">LOGIN</h1>
+    <form action="/login" method="POST">
+        <div class="m-1">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </div>
+        <div class="m-1">
+            <label for="password">Password&nbsp;</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
 
 <%- include('partials/footer') %>
