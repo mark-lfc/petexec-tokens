@@ -1,11 +1,14 @@
 <%- include('../partials/head') %>
 <%- include('../partials/nav') %>
 
-<h1><%= location %></h1>
-<h2><%= title %></h2>
+<div class="container-fluid">
+    <h1><%= location %></h1>
+    <br />
+    <h2><%= title %></h2>
 
-<button id="button"><a id="authenticate" href="">Authenticate</a></button>
-<div id="result"></div>
+    <a id="authenticate" href="" class="btn btn-success" role="button">Authenticate</a>
+    <div id="result"></div>
+</div>
 
 <script>
     $(function() {
