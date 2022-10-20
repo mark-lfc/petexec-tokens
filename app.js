@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const User = require('./models/user');
 const bcrypt = require('bcrypt');
 const session = require('express-session')
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require('path');
 
 main().catch(err => console.log(err));
@@ -421,5 +421,5 @@ app.post('/register', async (req, res) => {
     SERVER
 */
 app.listen(port, () => {
-    console.log('Local server is live on Port 3000');
+    console.log('Server is live');
 })
