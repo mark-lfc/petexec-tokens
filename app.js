@@ -130,6 +130,13 @@ app.get('/swf/report', (req, res) => {
     });
 })
 
+app.get('/swf/scheduled_service', (req, res) => {
+    res.render('dogtopia_swf/scheduled_service', {
+        location: 'Dogtopia South Waterfront',
+        title: 'Scheduled Service Read'
+    });
+})
+
 /*
     DOGTOPIA LAKE OSWEGO ROUTES
 */
@@ -193,6 +200,13 @@ app.get('/lo/report', (req, res) => {
     res.render('dogtopia_lo/report', {
         location: 'Dogtopia Lake Oswego',
         title: 'Report Read'
+    });
+})
+
+app.get('/lo/scheduled_service', (req, res) => {
+    res.render('dogtopia_lo/scheduled_service', {
+        location: 'Dogtopia Lake Oswego',
+        title: 'Scheduled Service Read'
     });
 })
 
@@ -262,6 +276,13 @@ app.get('/pearl/report', (req, res) => {
     });
 })
 
+app.get('/pearl/scheduled_service', (req, res) => {
+    res.render('dogtopia_pearl/scheduled_service', {
+        location: 'Dogtopia Pearl District',
+        title: 'Scheduled Service Read'
+    });
+})
+
 /*
     DOGTOPIA CEDAR MILLS ROUTES
 */
@@ -328,6 +349,13 @@ app.get('/cm/report', (req, res) => {
     });
 })
 
+app.get('/cm/scheduled_service', (req, res) => {
+    res.render('dogtopia_cm/scheduled_service', {
+        location: 'Dogtopia Cedar Mills',
+        title: 'Scheduled Service Read'
+    });
+})
+
 /*
     DOGTOPIA SAN MARCOS ROUTES
 */
@@ -391,6 +419,13 @@ app.get('/sm/report', (req, res) => {
     res.render('dogtopia_sm/report', {
         location: 'Dogtopia San Marcos',
         title: 'Report Read'
+    });
+})
+
+app.get('/sm/scheduled_service', (req, res) => {
+    res.render('dogtopia_sm/scheduled_service', {
+        location: 'Dogtopia San Marcos',
+        title: 'Scheduled Service Read'
     });
 })
 
